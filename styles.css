@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+  --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+  --VeryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--VeryLightGray);
+}
+.main-container {
+  /* border: 1px solid black; */
+  width: 20.3125rem;
+  margin: 5.4375rem auto 2.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+article {
+  /* border: 1px solid greenyellow; */
+  width: 100%;
+  height: 27.5rem;
+  padding: 3rem;
+}
+.sedans {
+  background-color: var(--BrightOrange);
+}
+.suvs {
+  background-color: var(--DarkCyan);
+}
+.luxury {
+  background-color: var(--VeryDarkCyan);
+}
+img {
+  margin-bottom: 2.25rem;
+}
+h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5625rem;
+  color: var(--VeryLightGray);
+  font-family: "Big Shoulders Display", cursive;
+}
+p {
+  color: var(--TransparentWhite);
+  line-height: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+button {
+  width: 9.25rem;
+  height: 2.875rem;
+  border-radius: 2.8125rem;
+  border-style: none;
+  background-color: var(--VeryLightGray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+}
+.sedans-btn {
+  color: var(--BrightOrange);
+}
+.suvs-btn {
+  color: var(--DarkCyan);
+}
+.luxury-btn {
+  color: var(--VeryDarkCyan);
+}
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--VeryLightGray);
+}
+.sedans-btn:hover {
+  background-color: var(--BrightOrange);
+  color: var(--VeryLightGray);
+}
+.suvs-btn:hover {
+  background-color: var(--DarkCyan);
+  color: var(--VeryLightGray);
+}
+.luxury-btn:hover {
+  background-color: var(--VeryDarkCyan);
+  color: var(--VeryLightGray);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 59rem) {
+  .main-container {
+    width: 57.75rem;
+    display: flex;
+    margin-top: 10.625rem;
+  }
+  article {
+    height: 31.25rem;
+  }
+  p {
+    margin-bottom: 5rem;
+  }
+}
